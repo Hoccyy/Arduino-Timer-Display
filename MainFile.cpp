@@ -1,10 +1,23 @@
+//By Hoccyy
+// Variable for pin numbers (increases during void loop then resets)
 int pinCount = 0;
 
 void setup()
 {
-  pinMode(LED_BUILTIN, OUTPUT);
+  //Turning on all pins that you NEED (add missing pin numbers if necessary)
+  //pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+
 }
 
+// Looping display
+// (HIGH = On, LOW = Off)
 void loop()
 {
 
@@ -18,11 +31,12 @@ void loop()
       digitalWrite(8, LOW);
       digitalWrite(6, HIGH);
       digitalWrite(7, HIGH);
-      // Pause before increment
-      delay (2000);
+
+      // Pause for 1 second (1000 m.s) before increment
+      delay (1000);
       pinCount++;
       break;
-   
+    
     case 1:
       digitalWrite(4, HIGH);
       digitalWrite(3, HIGH);
@@ -31,11 +45,12 @@ void loop()
       digitalWrite(6, LOW);
       digitalWrite(7, LOW);
       digitalWrite(8, LOW);
+
       // Pause before increment
       delay (1000);
       pinCount++;
       break;
-   
+    
     case 2:
       digitalWrite(8, HIGH);
       digitalWrite(2, HIGH);
@@ -48,7 +63,7 @@ void loop()
       delay (1000);
       pinCount++;
       break;
-   
+    
     case 3:
       digitalWrite(8, HIGH);
       digitalWrite(2, HIGH);
@@ -61,7 +76,7 @@ void loop()
       delay (1000);
       pinCount++;
       break;
-   
+    
     case 4:
       digitalWrite(8, HIGH);
       digitalWrite(7, HIGH);
@@ -140,8 +155,8 @@ void loop()
       pinCount++;
       break;
    
-   
-   
+    
+    
     // Letters a - g
     case 10:
       digitalWrite(8, HIGH);
@@ -155,7 +170,7 @@ void loop()
       delay (1000);
       pinCount++;
       break;
-   
+    
     case 11: //letter b
       digitalWrite(8, HIGH);
       digitalWrite(7, HIGH);
@@ -168,7 +183,7 @@ void loop()
       delay (1000);
       pinCount++;
       break;
-   
+    
     case 12: //letter c
       digitalWrite(2, HIGH);
       digitalWrite(7, HIGH);
@@ -181,7 +196,7 @@ void loop()
       delay (1000);
       pinCount++;
       break;
-   
+    
     case 13: // letter d
       digitalWrite(8, HIGH);
       digitalWrite(6, HIGH);
@@ -231,12 +246,15 @@ void loop()
       digitalWrite(6, LOW);
       // Pause before increment
       delay (1000);
-      pinCount++;
+
+      // Resetting variable to restart loop
+      pinCount = 0;
       break;
     // End of letters section
-   
+    
 
   } //switch end
-  // restart the entire loop
-  //pinCount = 0;
 }
+
+// By Hoccyy
+// https://github.com/Hoccyy
