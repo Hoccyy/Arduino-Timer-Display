@@ -1,0 +1,249 @@
+// C++ code
+//
+
+int pinCount = 0;
+
+void setup()
+{
+  //TRY TESTING this OUT on PIN NUMS
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+
+  switch (pinCount)
+  {
+    case 0:
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(8, LOW);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      // Pause before increment
+      delay (2000);
+      pinCount++;
+      break;
+    
+    case 1:
+      digitalWrite(4, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(2, LOW);
+      digitalWrite(5, LOW);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+      digitalWrite(8, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    
+    case 2:
+      digitalWrite(8, HIGH);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(7, LOW);
+      digitalWrite(4, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    
+    case 3:
+      digitalWrite(8, HIGH);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(7, LOW);
+      digitalWrite(6, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    
+    case 4:
+      digitalWrite(8, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(2, LOW);
+      digitalWrite(5, LOW);
+      digitalWrite(6, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 5: // outputs the number 5
+      digitalWrite(8, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, LOW);
+      digitalWrite(6, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 6:
+      digitalWrite(8, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, LOW);
+      digitalWrite(6, HIGH);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 7:
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, LOW);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+      digitalWrite(8, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 8:
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 9:
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(6, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    
+    
+    
+    // Letters a - g
+    case 10:
+      digitalWrite(8, HIGH);
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(5, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    
+    case 11: //letter b
+      digitalWrite(8, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(2, LOW);
+      digitalWrite(3, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    
+    case 12: //letter c
+      digitalWrite(2, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(4, LOW);
+      digitalWrite(3, LOW);
+      digitalWrite(8, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    
+    case 13: // letter d
+      digitalWrite(8, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(2, LOW);
+      digitalWrite(7, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 14: // outputs letter e
+      digitalWrite(2, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(4, LOW);
+      digitalWrite(3, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 15: // letter f
+      digitalWrite(2, HIGH);
+      digitalWrite(6, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(5, LOW);
+      digitalWrite(3, LOW);
+      digitalWrite(4, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+
+    case 16: //letter g
+      digitalWrite(2, HIGH);
+      digitalWrite(3, HIGH);
+      digitalWrite(4, HIGH);
+      digitalWrite(5, HIGH);
+      digitalWrite(7, HIGH);
+      digitalWrite(8, HIGH);
+      digitalWrite(6, LOW);
+      // Pause before increment
+      delay (1000);
+      pinCount++;
+      break;
+    // End of letters section
+    
+
+  } //switch end
+  // restart the entire loop
+  //pinCount = 0;
+}
+
+// By Hoccyy
+// https://github.com/Hoccyy
